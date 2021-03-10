@@ -9,35 +9,35 @@ ul li {
   margin: 10px 0;
 }
 header, label {
-  color: #53ace4;
+  color: #cecece;
 }
 input, select {
-  background-color: #29394b;
-  color: #c6c5c3;
+  background-color: #003f00;
+  color: #cecece;
   border-radius: 3px;
   border: none;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
-  border-color: #53ace4;
+  border-color: #00ff00;
   padding: 6px;
 }
 .ng-invalid:not(.ng-pristine):not(.required-invalid) {
-  border: 1px solid #d93a3e;
+  border: 1px solid #ff0008;
 }
 input[required].ng-invalid {
-  border-right: 5px solid #d93a3e;
+  border-right: 5px solid #ff0008;
 }
 input[required]:not(.required-invalid),
 input[required].ng-invalid:not(.required-invalid) {
   border-right: 5px solid #37ad79;
 }
 .error {
-  color: #d93a3e;
+  color: #ff0008;
 }
 #year {
   width: 50px;
 }
 button[type=submit] {
-  background-color: #45bf94;
+  background-color: #009b00;
   border: 0;
   padding: 10px;
   font-size: 1em;
@@ -46,7 +46,15 @@ button[type=submit] {
   cursor: pointer;
 }
 button[type=submit]:disabled {
-  background-color: #333;
-  color: #666;
+  background-color: rgb(36, 36, 36);
+  color: #818181;
   cursor: default;
+}
+header {
+  border-top: 2px solid #00ff00;
+  border-bottom: 2px solid #00ff00;
+  display: inline-block;
+}
+label {
+  padding-right: 5px;
 }

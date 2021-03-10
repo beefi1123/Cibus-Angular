@@ -4,11 +4,11 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'categoryList'
 })
 export class CategoryListPipe implements PipeTransform {
-  transform(mediaItems) {
+  transform(recipes) {
     const categories = [];
-    mediaItems.forEach(mediaItem => {
-      if (categories.indexOf(mediaItem.category) <= -1) {
-        categories.push(mediaItem.category);
+    recipes.forEach(recipe => {
+      if (categories.indexOf(recipe.category) <= -1) {
+        categories.push(recipe.category);
       }
     });
     return categories.join(', ');
